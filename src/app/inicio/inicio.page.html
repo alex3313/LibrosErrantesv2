@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Hola, {{ user?.nombre }}</ion-label>
+  </ion-item>
+
+  <ion-button expand="full" (click)="irAlCatalogo()">Ver Catálogo</ion-button>
+  <ion-button expand="full" (click)="irAlCarrito()">Ver Carrito</ion-button>
+  <ion-button expand="full" (click)="irApirest()">Sugerir colección</ion-button>
+  
+  <!-- Mostrar botones de administrador solo si isAdmin es true -->
+  <ion-button *ngIf="isAdmin" expand="full" (click)="irAdministrar()">Agregar</ion-button>
+  <ion-button *ngIf="isAdmin" expand="full" (click)="irAlistar()">Listar y Agregar</ion-button>
+  <ion-button *ngIf="isAdmin" expand="full" (click)="irAgeolocation()">Geo</ion-button>
+  <ion-button *ngIf="isAdmin" expand="full" (click)="irApedidos()">Pedidos</ion-button>
+  <ion-button *ngIf="isAdmin" expand="full" (click)="irAdemanda()">Demanda sugerida</ion-button>
+  
+  <ion-button expand="full" color="danger" (click)="logout()">Cerrar sesión</ion-button>
+</ion-content>

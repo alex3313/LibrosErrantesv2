@@ -1,0 +1,29 @@
+<!-- apirest.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Buscar Libros</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar [(ngModel)]="query" (ionInput)="onSearchChange($event)"></ion-searchbar>
+
+  <ion-spinner *ngIf="isLoading" name="crescent"></ion-spinner>
+
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+
+  <ion-list *ngIf="!isLoading && books.length">
+    <ion-item *ngFor="let book of books">
+      <ion-thumbnail slot="start" *ngIf="book.coverUrl">
+        <img [src]="book.coverUrl" alt="Book Cover">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ book.title }}</h2>
+        <p>{{ book.author_name?.join(', ') }}</p>
+      </ion-label>
+      <ion-button (click)="pedirLibro(book)">Pedir</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

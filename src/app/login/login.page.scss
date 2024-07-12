@@ -1,0 +1,51 @@
+.title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-title {
+  font-size: 24px;
+  margin-bottom: 10px; 
+}
+
+.sub-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+.custom-button {
+  background-color: #004d40; /* Color verde oscuro */
+  color: white; /* Color del texto en el botón */
+}
+
+.custom-button:hover {
+  background-color: #00332a; /* Color verde oscuro más oscuro al pasar el ratón */
+}
+
+.fade-in {
+  animation: fadeIn 3.5s ease-out; /* Duración y tipo de animación */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Empieza invisible */
+  }
+  to {
+    opacity: 1; /* Termina completamente visible */
+  }
+}
+
+.custom-button.mat-raised-button.mat-primary,
+.custom-button.mat-raised-button {
+  background-color: #004d40; /* Color verde oscuro */
+  color: white; /* Color del texto en el botón */
+}
+
+/* Cambia el color del botón cuando se pasa el ratón sobre él */
+.custom-button.mat-raised-button.mat-primary:hover,
+.custom-button.mat-raised-button:hover {
+  background-color: #00332a; /* Color verde oscuro más oscuro al pasar el ratón */
+}

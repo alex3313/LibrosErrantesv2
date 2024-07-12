@@ -1,0 +1,17 @@
+<!-- demanda.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Libros a Futuro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let demanda of demandas | async">
+      <ion-label>
+        <h2>{{ demanda.title }}</h2>
+        <p>{{ demanda.author_name }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

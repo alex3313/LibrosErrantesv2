@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Geolocation</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="userLocation">
+    <h2>Tu Ubicación Actual</h2>
+    <p>Latitud: {{ userLocation.lat }}</p>
+    <p>Longitud: {{ userLocation.lng }}</p>
+  </div>
+  <div *ngIf="!userLocation">
+    <p>Obteniendo ubicación...</p>
+  </div>
+  <div id="map" style="height: 100vh; width: 100%;"></div> 
+</ion-content>
