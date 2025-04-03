@@ -1,6 +1,20 @@
 Aplicación móvil en IONIC con angular y typescript, con CRUD, API, sistema de roles, vista de administrador y sistema de geolocalización para compras.
 
 
+Catalogo, ejemplo de primer insert
+
+
+![ejemplo primer insert](https://github.com/user-attachments/assets/162c83ff-de7e-4d29-a8a7-9791bd4939eb)
+
+
+
+Carrito de compras
+
+
+![carritolast](https://github.com/user-attachments/assets/897a8b10-54dd-4bd9-abde-d817974ac85b)
+
+
+
 API para solicitud de libros para catálogo
 
 ![solicitud libros](https://github.com/user-attachments/assets/62763b4b-5fe2-4b49-a2a6-3a3a89798c3e)
