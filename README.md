@@ -3,15 +3,14 @@ Aplicación móvil en IONIC con angular y typescript, con CRUD, API, sistema de 
 
 Catalogo, ejemplo de primer insert
 
-
-![image](https://github.com/user-attachments/assets/e11214d0-cc75-444d-8fd5-41e239e186a9)
+![image](https://github.com/user-attachments/assets/96738301-3154-44b3-91d6-c3231e3625c6)
 
 
 
 Carrito de compras
 
+![image](https://github.com/user-attachments/assets/e11214d0-cc75-444d-8fd5-41e239e186a9)
 
-![image](https://github.com/user-attachments/assets/96738301-3154-44b3-91d6-c3231e3625c6)
 
 
 
