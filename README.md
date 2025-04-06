@@ -1,5 +1,9 @@
 Aplicación móvil en IONIC con angular y typescript, con CRUD, API, sistema de roles, vista de administrador y sistema de geolocalización para compras.
 
+ [Haz clic aquí para descargar la app desde GitHub](https://github.com/alex3313/LibrosErrantesv2/releases/download/store/LibrosErrantesv2.apk)
+
+
+
 Algunas ejemplo de las vistas y posibles usos:
 
 Carrito
