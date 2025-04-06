@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>Carrito</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,19 +9,19 @@
     <ion-item *ngFor="let item of carrito">
       <ion-label>
         <h2>{{ item.nombre }}</h2>
-        <p>{{ item.autor }}</p>
-        <p>{{ item.precio | currency }}</p>
+        <p>Autor: {{ item.autor }}</p>
+        <p>Precio: {{ item.precio | currency }}</p>
         <p>Cantidad: {{ item.cantidad }}</p>
       </ion-label>
-      <ion-button (click)="quitarDelCarrito(item)">
-        <ion-icon name="trash-outline"></ion-icon>
+      <ion-button fill="clear" color="danger" (click)="quitarDelCarrito(item)">
+        <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
       </ion-button>
     </ion-item>
   </ion-list>
 
-  <div style="display: flex; flex-direction: column; align-items: center;">
-    <ion-button expand="full" (click)="IraComprar()">Comprar</ion-button>
-    <ion-button expand="full" (click)="volverInicio()">Volver a Inicio</ion-button>
-    <ion-button expand="full" (click)="volverCatalogo()">Volver a Catálogo</ion-button>
+  <div class="botones-carrito">
+    <ion-button expand="block" color="success" (click)="IraComprar()">Comprar</ion-button>
+    <ion-button expand="block" color="medium" (click)="volverInicio()">Volver a Inicio</ion-button>
+    <ion-button expand="block" color="light" (click)="volverCatalogo()">Volver a Catálogo</ion-button>
   </div>
 </ion-content>

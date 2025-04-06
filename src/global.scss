@@ -50,3 +50,6 @@
     --ion-color-primary: #004d40; /* Color de título verde oscuro */
   }
 
+  html, body, ion-app, ion-content {
+    height: 100%;
+  }

@@ -1,28 +1,52 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title class="welcome-title">Libros Errantes</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-padding">
-  <ion-text class="sub-title fade-in">Cree su cuenta para iniciar</ion-text>
+<ion-content [fullscreen]="true" class="page-container ion-padding">
+  <div class="title-container fade-in">
+    <ion-text class="sub-title">Cree su cuenta para iniciar</ion-text>
+  </div>
 
-  <form #loginForm="ngForm" (ngSubmit)="login()" class="ion-padding-bottom">
+  <form #loginForm="ngForm" (ngSubmit)="login()" class="login-card">
     <ion-item>
       <ion-label position="floating">Usuario</ion-label>
-      <ion-input name="username" [(ngModel)]="user.username" required minlength="3" maxlength="8"
-        pattern="^[a-zA-Z0-9]*$"></ion-input>
+      <ion-input
+        name="username"
+        [(ngModel)]="user.username"
+        required
+        minlength="3"
+        maxlength="8"
+        pattern="^[a-zA-Z0-9]*$"
+      ></ion-input>
     </ion-item>
+
     <ion-item>
       <ion-label position="floating">Contraseña numérica de 4 dígitos</ion-label>
-      <ion-input name="password" [(ngModel)]="user.password" required minlength="4" maxlength="4"
-        type="password"></ion-input>
+      <ion-input
+        name="password"
+        [(ngModel)]="user.password"
+        required
+        minlength="4"
+        maxlength="4"
+        type="password"
+        inputmode="numeric"
+      ></ion-input>
     </ion-item>
-    <button mat-raised-button type="submit" [disabled]="!loginForm.valid" color="green" class="custom-button" style="width: 100%;">
+
+    <ion-button
+      expand="block"
+      type="submit"
+      class="custom-button"
+      [disabled]="!loginForm.valid"
+    >
       Ingresar
-    </button>
+    </ion-button>
   </form>
 
-  <ion-text class="ion-padding-top">¿No tienes una cuenta?</ion-text>
-  <button ion-button (click)="goToRegister()">Registrarse</button>
+  <div class="register-text fade-in">
+    ¿No tienes una cuenta?
+    <a (click)="goToRegister()">Registrarse</a>
+  </div>
 </ion-content>

@@ -14,9 +14,9 @@
   <h2 class="ion-text-center">Listado de Productos</h2>
 
   <ion-searchbar placeholder="Buscar Producto" (ionInput)="obtenerTexto($event)"></ion-searchbar>
+  
   <ion-list>
     <ion-item-sliding *ngFor="let x of arregloProductos">
-
       <ion-item>
         <ion-label>
           <h2>{{ x.nombre }}</h2>

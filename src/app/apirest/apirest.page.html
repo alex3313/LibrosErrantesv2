@@ -1,14 +1,13 @@
-<!-- apirest.page.html -->
 <ion-header>
   <ion-toolbar>
     <ion-title>Buscar Libros</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-searchbar [(ngModel)]="query" (ionInput)="onSearchChange($event)"></ion-searchbar>
+<ion-content class="buscar-libros-content">
+  <ion-searchbar [(ngModel)]="query" (ionInput)="onSearchChange($event)" debounce="500" placeholder="Buscar por título o autor"></ion-searchbar>
 
-  <ion-spinner *ngIf="isLoading" name="crescent"></ion-spinner>
+  <ion-spinner *ngIf="isLoading" name="crescent" class="spinner"></ion-spinner>
 
   <div *ngIf="errorMessage" class="error-message">
     {{ errorMessage }}

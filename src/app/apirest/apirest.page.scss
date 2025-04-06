@@ -1,0 +1,74 @@
+.buscar-libros-content {
+    --padding-start: 16px;
+    --padding-end: 16px;
+  
+    ion-searchbar {
+      margin-top: 16px;
+      border-radius: 8px;
+      --background: #f4f5f8;
+      --padding-start: 12px;
+      --padding-end: 12px;
+  
+      ion-input {
+        font-size: 14px;
+      }
+  
+      ion-icon {
+        color: var(--ion-color-medium);
+      }
+    }
+  
+    .spinner {
+      display: block;
+      margin: 40px auto;
+    }
+  
+    .error-message {
+      color: var(--ion-color-danger);
+      text-align: center;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  
+    ion-list {
+      margin-top: 20px;
+  
+      ion-item {
+        --background: #ffffff;
+        margin-bottom: 12px;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  
+        ion-thumbnail {
+          margin-right: 16px;
+          border-radius: 8px;
+        }
+  
+        ion-label {
+          h2 {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0;
+          }
+  
+          p {
+            font-size: 14px;
+            color: var(--ion-color-medium);
+            margin: 0;
+          }
+        }
+  
+        ion-button {
+          margin-left: auto;
+          --border-radius: 8px;
+          --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          font-weight: bold;
+        }
+      }
+    }
+  
+    ion-item:last-child {
+      margin-bottom: 20px;
+    }
+  }
+  

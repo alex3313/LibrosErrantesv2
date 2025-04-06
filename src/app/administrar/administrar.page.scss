@@ -1,0 +1,41 @@
+.agregar-producto-content {
+    --padding-start: 16px;
+    --padding-end: 16px;
+  
+    .form-container {
+      margin-top: 20px;
+      padding: 16px;
+      background: var(--ion-color-light);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+  
+    ion-list {
+      background: transparent;
+  
+      ion-item {
+        --background: #ffffff;
+        margin-bottom: 12px;
+        border-radius: 8px;
+        --inner-border-width: 0;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  
+        ion-label {
+          color: var(--ion-color-medium);
+        }
+  
+        ion-input {
+          padding-top: 8px;
+          font-size: 16px;
+        }
+      }
+    }
+  
+    ion-button {
+      margin-top: 24px;
+      --border-radius: 8px;
+      --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      font-weight: bold;
+    }
+  }
+  
